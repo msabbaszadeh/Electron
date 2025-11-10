@@ -1,5 +1,7 @@
 # Electron
-Open-source, local, and personalized recommendation system powered by RAG and LLMs. Flexible, private, and intelligent — meet Electron.
+<p align="center">
+  <b>Open-source, local, and personalized recommendation system powered by RAG and LLMs. Flexible, private, and intelligent — meet Electron.</b>
+</p>
 
 # Personalized NLP & RAG System
 
