@@ -1,0 +1,5 @@
+{
+  "name": "Electron",
+  "description": "An advanced AI-powered application for creating detailed user profiles through conversational interviews and enabling in-depth exploration and querying of those profiles by HR professionals.",
+  "requestFramePermissions": []
+}
