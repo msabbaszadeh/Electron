@@ -3,6 +3,8 @@
   <b>Open-source, local, and personalized recommendation system powered by RAG and LLMs. Flexible, private, and intelligent — meet Electron.</b>
 </p>
 
+
+
 # Personalized NLP & RAG System
 
 A cutting-edge, multi-modal AI platform that combines advanced Natural Language Processing, Retrieval-Augmented Generation (RAG), and personalized recommendation systems. Built with TypeScript, React, and Python, this system provides intelligent content generation with multi-service AI integration and vector database capabilities.
