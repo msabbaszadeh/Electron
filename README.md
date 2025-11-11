@@ -1,4 +1,9 @@
 # ⚡ Electron
+<img width="1919" height="9<img width="1313" height="891" alt="Screenshot 2025-11-12 004401" src="https://github.com/user-attachments/assets/7b88e199-3a64-49d2-b7dc-fd167a72e7ab" />
+09" alt="Screenshot 2025-11-12 004344" src="https://github.com/user-attachments/assets/9e9226e9-8a26-4e5a-9840-0015d8c32cdf" />
+<img width="1281" height="891" alt="Screenshot 2025-11-12 004425" src="https://github.com/user-attachments/assets/d9c15990-9988-4ff4-bed7-e9a01eefe6ee" />
+<img width="1374" height="887" alt="Screenshot 2025-11-12 004448" src="https://github.com/user-attachments/assets/6e9e0b40-3626-4d9a-8f79-68081e9f9ead" />
+<img width="675" height="818" alt="Screenshot 2025-11-12 004513" src="https://github.com/user-attachments/assets/bae9dbbf-67a3-4a7d-ae8b-ec9882063edb" />
 
 🧠 Open-source, local, and personalized recommendation system powered by RAG and LLMs. Flexible, private, and intelligent — meet Electron.
 
