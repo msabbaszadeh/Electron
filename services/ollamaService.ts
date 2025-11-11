@@ -73,9 +73,9 @@ export const runOllama = async (prompt: string, settings: Settings): Promise<str
     } catch (error) {
         console.error("Error calling Ollama API:", error);
          if (error instanceof Error) {
-            return `Error communicating with Ollama: ${error.message}`;
+            return '';
         }
-        return "An unknown error occurred while communicating with Ollama.";
+        return '';
     }
 };
 
@@ -141,9 +141,9 @@ export const runOllamaStream = async function* (prompt: string, settings: Settin
     } catch (error) {
         console.error("Error calling Ollama streaming API:", error);
         if (error instanceof Error) {
-            yield `Error communicating with Ollama: ${error.message}`;
+            yield '';
         } else {
-            yield "An unknown error occurred while communicating with Ollama.";
+            yield '';
         }
     }
 };

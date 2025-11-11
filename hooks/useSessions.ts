@@ -16,6 +16,10 @@ export function useSessions() {
   }, []);
 
   const createSession = (title: string, messages: Message[] = []) => {
+    if (!title.trim()) {
+      // Avoid creating sessions with empty titles
+      return;
+    }
     const newSession: ChatSession = {
       id: `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       title,

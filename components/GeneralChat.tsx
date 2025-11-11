@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Message, MessageSender, Settings } from '../types';
+import { Message, MessageSender, Settings, ChatSession } from '../types';
 import { useSettings } from '../context/SettingsContext';
 import { useSessions } from '../hooks/useSessions';
 import ChatWindow from './ChatWindow';
@@ -13,11 +13,12 @@ import SettingsModal from './SettingsModal';
 import { SparklesIcon, ChatBubbleLeftRightIcon, UserPlusIcon } from './icons/Icons';
 import { PlusIcon } from '@heroicons/react/24/solid';
 import { CogIcon } from '@heroicons/react/24/outline';
+import { sessionManager } from '../services/sessionManager';
 
 type ViewMode = 'chat' | 'create' | 'explore' | 'recommendation';
 
 const GeneralChat: React.FC = () => {
-    const { sessions, activeSession, createSession, switchSession, deleteSession } = useSessions();
+    const { sessions, activeSession, createSession, switchSession, deleteSession, updateSession } = useSessions();
     const [messages, setMessages] = useState<Message[]>([]);
     const [isLoading, setIsLoading] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -26,6 +27,7 @@ const GeneralChat: React.FC = () => {
     const messagesEndRef = useRef<HTMLDivElement>(null);
     const [currentView, setCurrentView] = useState<ViewMode>('chat');
     const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
+
 
     const activeSessionMessages = sessions.find(s => s.id === activeSession)?.messages || [];
 
@@ -246,6 +248,7 @@ const GeneralChat: React.FC = () => {
     setMessages(activeSessionMessages);
   }, [activeSession, sessions]);
 
+  console.log('Messages:', messages);
 
   const handleGetRecommendation = async () => {
     if (currentView !== 'chat') {
@@ -308,7 +311,12 @@ const GeneralChat: React.FC = () => {
             <div className="flex flex-col h-full">
                 <div className={`p-6 border-b ${themes[theme].colors.border}`}>
                     <div className="flex items-center justify-between">
-                        <h1 className={`text-xl font-bold ${themes[theme].colors.text} ${isSidebarOpen ? 'block' : 'hidden'}`}>AI Persona System</h1>
+                        <div className={`${isSidebarOpen ? 'block' : 'hidden'}`}>
+                          <h1 className={`text-4xl font-bold ${themes[theme].colors.text}`}>Electron</h1>
+                          <p className={`text-xs mt-1 ${themes[theme].colors.textSecondary}`}>
+                            personolized recommendation<br /> system powered by RAG and LMs
+                          </p>
+                        </div>
                         <button
                             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                             className={`p-2 rounded-lg transition-colors ${themes[theme].colors.textSecondary} ${themes[theme].colors.hover} ${themes[theme].colors.textHover}`}

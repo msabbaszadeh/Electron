@@ -20,7 +20,7 @@ export const defaultSettings: Settings = {
   huggingface: {},
   ollama: {
     baseUrl: 'http://localhost:11434',
-    model: 'llama3',
+    model: 'llama2',
   },
   prompts: defaultPrompts,
   referenceDataset: undefined,
