@@ -6,10 +6,10 @@ export const themes = {
     name: 'Dark',
     colors: {
       // Main backgrounds
-      background: 'bg-gray-950',
+      background: 'bg-slate-950',
       sidebarBackground: 'bg-slate-900',
       sessionManagerBackground: 'bg-slate-800/95',
-      mainContentBg: 'bg-gray-900',
+      mainContentBg: 'bg-slate-950',
       
       // Component backgrounds
       componentBg: 'bg-slate-800/50',

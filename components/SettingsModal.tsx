@@ -623,15 +623,15 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ isOpen, onClose }) => {
                         <div className="space-y-3">
                             <div className="flex items-center justify-between">
                                 <span className="text-sm text-slate-300">Explorer Agent</span>
-                                <button onClick={() => setEditingPrompt('explorerAgent')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
+                                <button onClick={() => setEditingPrompt('EXPLORER_PROMPT')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
                             </div>
                             <div className="flex items-center justify-between">
                                 <span className="text-sm text-slate-300">Knowledge-Based Agent</span>
-                                <button onClick={() => setEditingPrompt('knowledgeBasedAgent')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
+                                <button onClick={() => setEditingPrompt('KNOWLEDGE_BASED_PROMPT')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
                             </div>
                             <div className="flex items-center justify-between">
                                 <span className="text-sm text-slate-300">RAG-Based Agent</span>
-                                <button onClick={() => setEditingPrompt('ragBasedAgent')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
+                                <button onClick={() => setEditingPrompt('RAG_BASED_PROMPT')} className="text-xs bg-slate-700 hover:bg-slate-600 text-white px-3 py-1 rounded transition-colors">Edit</button>
                             </div>
                         </div>
                     </div>

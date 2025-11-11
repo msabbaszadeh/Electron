@@ -147,9 +147,9 @@ const GeneralChat: React.FC = () => {
             const updatedMessages = [...newMessages, aiMessage];
             setMessages(updatedMessages);
 
-            // Use streaming API
+            // Use streaming API with up-to-date history (include user message, exclude AI placeholder)
             let fullResponse = '';
-            for await (const chunk of runGeneralChatAgentStream(messages, fullInput, settings)) {
+            for await (const chunk of runGeneralChatAgentStream(newMessages, fullInput, settings)) {
                 fullResponse += chunk;
                 setMessages(prev => 
                     prev.map(msg => 
@@ -279,7 +279,8 @@ const GeneralChat: React.FC = () => {
         setMessages(updatedMessages);
 
         let fullResponse = '';
-        for await (const chunk of runGeneralChatAgentStream(messages, "Get me a recommendation", settings)) {
+        // Use up-to-date history (include the user message we just added)
+        for await (const chunk of runGeneralChatAgentStream(newMessages, "Get me a recommendation", settings)) {
             fullResponse += chunk;
             setMessages(prev =>
                 prev.map(msg =>
@@ -314,7 +315,7 @@ const GeneralChat: React.FC = () => {
                         <div className={`${isSidebarOpen ? 'block' : 'hidden'}`}>
                           <h1 className={`text-4xl font-bold ${themes[theme].colors.text}`}>Electron</h1>
                           <p className={`text-xs mt-1 ${themes[theme].colors.textSecondary}`}>
-                            personolized recommendation<br /> system powered by RAG and LMs
+                            personalizable recommendation<br /> system powered by RAG and LMs
                           </p>
                         </div>
                         <button
@@ -453,10 +454,10 @@ const GeneralChat: React.FC = () => {
                  onClose={() => setIsSettingsModalOpen(false)} 
              />
 
-             {/* Signature Footer */}
-            <footer className={`text-center text-xs ${themes[theme].colors.textSecondary} py-2 ${themes[theme].colors.componentBg} w-full fixed bottom-0 left-0 z-30`}>
-                 open source rag recomenadtion system designed and built by Mohammad sadegh abbaszadeh
-             </footer>
+            {/* Signature Footer (hidden visually as requested) */}
+           <footer className={`invisible text-center text-xs ${themes[theme].colors.textSecondary} py-2 ${themes[theme].colors.componentBg} w-full fixed bottom-0 left-0 z-30`}>
+                open source rag recomenadtion system designed and built by Mohammad sadegh abbaszadeh
+            </footer>
          </div>
      </div>
    );
