@@ -3,7 +3,7 @@
 <h3 align="center">🧭 Electron UI Showcase</h3>
 
 <p align="center">
-  <em>Explore Electron’s interface — one screen at a time.</em>
+  <em>Explore Electron’s interface.</em>
 </p>
 
 <p align="center">
