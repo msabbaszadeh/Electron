@@ -1,4 +1,4 @@
-# ⚡ Electron
+# ⚡ Electron **Version 0.0.1**
 ## 📸 Screenshots
 <h3 align="center">🧭 Electron UI Showcase</h3>
 
