@@ -18,9 +18,6 @@
   <img src="https://github.com/user-attachments/assets/ed7f2d64-0256-48d5-b835-b844e0e0d8cc" width="800" alt="Screenshot 3" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/042192ca-6c14-440e-a746-23d0b4396da0" width="800" alt="Screenshot 4" />
-</p>
 
 
 
