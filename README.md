@@ -1,13 +1,24 @@
 # ⚡ Electron
 ## 📸 Screenshots
+<h3 align="center">🧭 Electron UI Showcase</h3>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/9e9226e9-8a26-4e5a-9840-0015d8c32cdf" width="300" />
-  <img src="https://github.com/user-attachments/assets/7b88e199-3a64-49d2-b7dc-fd167a72e7ab" width="300" />
-  <img src="https://github.com/user-attachments/assets/d9c15990-9988-4ff4-bed7-e9a01eefe6ee" width="300" />
-  <img src="https://github.com/user-attachments/assets/6e9e0b40-3626-4d9a-8f79-68081e9f9ead" width="300" />
-  <img src="https://github.com/user-attachments/assets/bae9dbbf-67a3-4a7d-ae8b-ec9882063edb" width="300" />
+  <em>Explore Electron’s interface — one screen at a time.</em>
 </p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60b1c8f7-e13a-4d19-9bdd-d5af8f16267c" width="800" alt="Screenshot 1" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ed7f2d64-0256-48d5-b835-b844e0e0d8cc" width="800" alt="Screenshot 2" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/270795f3-39cb-413e-8ab9-2e40f09cca54" width="800" alt="Screenshot 3" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/042192ca-6c14-440e-a746-23d0b4396da0" width="800" alt="Screenshot 4" />
+</p>
+
 
 
 🧠 Open-source, local, and personalized recommendation system powered by RAG and LLMs. Flexible, private, and intelligent — meet Electron.
