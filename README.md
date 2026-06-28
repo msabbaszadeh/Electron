@@ -1,4 +1,8 @@
-# ⚡ Electron - **Version 0.0.1**
+# ⚡ Electron — RAG Recommendation System · **Version 0.0.1**
+
+> **Note:** This is **not** the [Electron.js](https://www.electronjs.org/) desktop framework.  
+> **Electron** here is an open-source **RAG-powered personalized recommendation system** built with React, TypeScript, FastAPI, and Qdrant.
+
 ## 📸 Screenshots
 <h3 align="center">🧭 Electron UI Showcase</h3>
 
@@ -207,7 +211,8 @@ cd embedding_service
 pip install -r requirements.txt
 
 # Start Qdrant (optional)
-docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
+docker compose up -d
+# or: docker run -p 6333:6333 -p 6334:6334 qdrant/qdrant
 
 # Start the development server
 npm run dev
@@ -251,7 +256,7 @@ We welcome contributions! Please see our contributing guidelines for details on:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **Apache License 2.0** — see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
